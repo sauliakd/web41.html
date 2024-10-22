@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax Effect</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Секція з ефектом паралаксу */
+        .parallax {
+            /* Встановлюємо висоту секції */
+            min-height: 100vh;
+
+            /* Фонове зображення */
+            background-image: url('your-image.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            /* Ефект паралаксу */
+            background-attachment: fixed;
+        }
+
+        /* Контентні секції */
+        .content {
+            height: 100vh;
+            background-color: #f1f1f1;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Вимикаємо паралакс на мобільних пристроях */
+        @media only screen and (max-width: 768px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Контент перед паралаксом -->
+    <div class="content">
+        <p>Контент перед паралаксом</p>
+    </div>
+
+    <!-- Секція з ефектом паралаксу -->
+    <div class="parallax"></div>
+
+    <!-- Контент після паралаксу -->
+    <div class="content">
+        <p>Контент після паралаксу</p>
+    </div>
+
+</body>
+</html>

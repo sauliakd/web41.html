@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Диагональное расположение с абсолютным позиционированием</title>
+    <style>
+        /* Общие стили для всех боксов */
+        .box {
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            position: absolute; /* Устанавливаем абсолютное позиционирование */
+        }
+
+        /* Стили для 1-го бокса */
+        .box1 {
+            padding: 10px;
+            border: 10px solid #0000ff;
+            background-color: #6600ff;
+            top: 0;
+            left: 0;
+        }
+
+        /* Стили для 2-го бокса */
+        .box2 {
+            border: 20px solid #00ff00;
+            background-color: #aeff00;
+            top: 220px; /* Смещаем вниз на высоту первого бокса + отступ */
+            left: 220px; /* Смещаем вправо на ширину первого бокса + отступ */
+        }
+
+        /* Стили для 3-го бокса */
+        .box3 {
+            border: 10px solid #ff0000;
+            background-color: #ff0000;
+            top: 440px; /* Смещаем вниз на высоту двух боксов + отступы */
+            left: 440px; /* Смещаем вправо на ширину двух боксов + отступы */
+        }
+
+        /* Контейнер */
+        .container {
+            position: relative; /* Родительский контейнер для абсолютного позиционирования */
+            height: 650px; /* Достаточно высокая высота для размещения боксов по диагонали */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">#1</div>
+        <div class="box box2">#2</div>
+        <div class="box box3">Сауляк Даря Юріївна <br>i love studying</div>
+    </div>
+</body>
+</html>

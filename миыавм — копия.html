@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Макет Сторінки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: black;
+        }
+        /* Навігаційна панель */
+        .navbar {
+            height: 75px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        /* Заголовок */
+        .header {
+            height: 400px;
+            background-image: url("https://images.ctfassets.net/ub3bwfd53mwy/5zi8myLobtihb1cWl3tj8L/45a40e66765f26beddf7eeee29f74723/6_Image.jpg?w=750");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+        }
+
+        /* Основний контент */
+        .main {
+            height: 500px;
+            background-color: black;
+            margin: 75px 100px; /* 75px зверху та знизу, 100px зліва та справа */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        /* Преподвал */
+        .prefooter {
+            height: 40px;
+            background-color: #121212;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 1em;
+        }
+
+        /* Підвал */
+        .footer {
+            height: 100px;
+            background-color: #212121;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <p>Лабораторная работа Сауляк Даря Юріївна</p>
+    </nav>
+    
+    <header class="header">
+        <div style="height: 100%; width: 100%; background-color: #00000090; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h1>CUTE CATS</h1>
+            <p>live laugh love cats!</p>
+        </div>
+    </header>
+    
+    <section class="main">
+        <iframe width="560" height="315" src="https://youtu.be/JxS5E-kZc2s?si=NCk6hyue41z3ZgB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    
+    <div class="prefooter">
+        <p style="color: white;">YouTube link --> </p>
+        <a href="https://youtu.be/JxS5E-kZc2s?si=NCk6hyue41z3ZgB8">click</a>
+    </div>
+    
+    <footer class="footer">
+        
+    </footer>
+</body>
+</html>
